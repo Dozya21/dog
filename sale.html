@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Собаки на продажу</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #003366, #008080);
+            color: #e0e0e0;
+        }
+        header {
+            background: linear-gradient(to right, #004080, #00b386);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            background: #004d66;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background: #006666;
+            color: #e0e0e0;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .dog-card {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            background: linear-gradient(to bottom, #004080, #006666);
+            text-align: center;
+            color: white;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .dog-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        .dog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .dog-card h3 {
+            font-size: 22px;
+            margin: 15px 0;
+        }
+        .dog-card p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .dog-card button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            border: none;
+            background: linear-gradient(to bottom, #008080, #004d66);
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .dog-card button:hover {
+            background: linear-gradient(to bottom, #004d66, #002933);
+            transform: scale(1.05);
+        }
+        footer {
+            background: #002933;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Аренда и покупка сторожевых собак
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="contacts.html">Контакты</a>
+    <a href="trainer.html">Услуга кинолога</a>
+    <a href="sale.html">Собаки на продажу</a>
+</nav>
+
+<section id="for-sale">
+    <h2>Собаки на продажу</h2>
+    <p>Только для покупки. Вы можете выбрать любую собаку из нашего списка, доступную исключительно для продажи:</p>
+    <div class="container">
+        <div class="dog-card">
+            <img src="https://i.pinimg.com/736x/4f/36/89/4f36892b315a13a705b754def170c1b3.jpg" alt="Алабай на продажу">
+            <h3>Алабай на продажу</h3>
+            <p>Идеально подходит для больших территорий. Прекрасная охранная собака.</p>
+            <p><strong>Цена: 150,000₸</strong></p>
+            <button>Купить</button>
+        </div>
+        <div class="dog-card">
+            <img src="https://mypets24.com/wp-content/uploads/2018/02/nemetskaya-ovcharka-foto-3.jpg" alt="Немецкая овчарка на продажу">
+            <h3>Немецкая овчарка на продажу</h3>
+            <p>Хорошо обученная собака для защиты и охраны.</p>
+            <p><strong>Цена: 200,000₸</strong></p>
+            <button>Купить</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Аренда и покупка сторожевых собак. Все права защищены.
+</footer>
+
+</body>
+</html>
+
+
